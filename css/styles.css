@@ -209,7 +209,6 @@ img {
 
 .features-title {}
 
-.visually-hidden {}
 
 .features-list {
     display: flex;
@@ -731,7 +730,7 @@ img {
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     margin-right: 12px;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     fill: transparent;
@@ -741,7 +740,7 @@ img {
 .modal-check:checked +  .modal-check-text .check-span {
     background-color: #404bbf;
     border: none;
-    fill: #fff;
+    fill: #F4F4FD;
 }
 
 .modal-check-link {
