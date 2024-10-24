@@ -149,7 +149,6 @@ img {
 .header-contacts-list-link:hover,
 .header-contacts-list-link:focus {
     color: #404bbf;
-    ;
 }
 
 /* ----- HERO ----- */
@@ -493,6 +492,65 @@ img {
     background-color: #31d0aa;
 }
 
+.subscribe {
+    margin-left: auto;
+}
+
+.subscribe-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.footer-email {
+    gap: 24px;
+}
+.footer-input {
+    width: 264px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-right: 24px;
+}
+
+.footer-input::placeholder {
+    color: #ffffff;
+}
+
+.subscribe-btn {
+    width: 165px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    background-color: #4d5ae5;
+    border-radius: 4px;
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+    background-color: #404bbf;
+}
+
+.subscribe-icon {
+    fill: #ffffff;
+    width: 24px;
+    height: 20px;
+}
+
+
 
 /* ----- MODAL ----- */
 
@@ -586,7 +644,7 @@ img {
     border: 1px solid #4d5ae5;
 }
 
-.modal-input:focus > .modal-icon {
+.modal-input:focus + .modal-icon {
     fill: #4D5AE5;
 }
 
@@ -615,7 +673,6 @@ img {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .modal-textarea {
     resize: none;
     width: 100%;
@@ -640,3 +697,29 @@ img {
     color: rgba(46, 47, 66, 0.4);
 }
 
+.modal-check-text {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    display: flex;
+    align-items: center;
+}
+
+.modal-check-text span {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    margin-right: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: transparent;
+}
+
+.modal-check:checked + .modal-check-text span {
+    background-color: #404bbf;
+    border: none;
+    fill: #fff;
+}
