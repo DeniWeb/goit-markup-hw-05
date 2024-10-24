@@ -505,7 +505,11 @@ img {
     margin-bottom: 16px;
 }
 
-.footer-email {
+.footer-form {
+    display: flex;
+}
+
+.footer-lable {
     gap: 24px;
 }
 .footer-input {
@@ -528,15 +532,20 @@ img {
 }
 
 .subscribe-btn {
-    width: 165px;
+    min-width: 165px;
     height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    cursor: pointer;
     color: #ffffff;
     background-color: #4d5ae5;
     border-radius: 4px;
+    border: none;
 }
 
 .subscribe-btn:hover,
@@ -545,6 +554,7 @@ img {
 }
 
 .subscribe-icon {
+    margin-left: 16px;
     fill: #ffffff;
     width: 24px;
     height: 20px;
